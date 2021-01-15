@@ -1,11 +1,11 @@
 < html >
-< title >添加佈告</ title >
+< title >添加佈告</ title ><!--打在<TITLE></TITLE>這裡面的文字會當作一篇網頁的主題。-->
 <身體>
     < h2 >新增佈告</ h2 >
-    <表單 操作= “ bulletin_add.php ” 方法= “發布” >
+    <表單 操作= “ bulletin_add.php ” 方法= “發布” ><!-- 表單是action=bulletin_add.php當按下送出表單之後，會將資料傳送到bulletin_add.php這程式。-->
     標題：<輸入  類型= “文本” 名稱= “標題” 大小= “ 100 ” > < p >
     佈告內容：< p >
-	< textarea 行= “ 20 ”  cols = “ 100 ” 名稱= “ content ” > </ textarea >
+	< textarea 行= “ 20 ”  cols = “ 100 ” 名稱= “ content ” > </ textarea ><!--TEXTAREA在表單中，建立一個可以輸入多行文字的輸入框。rows設定輸入框的高度、cols設定輸入框的寬度、name:聲明欄位名稱。-->
     < p >
     佈告類型：<輸入 類型= “收音機” 名稱= “類型” 值= “ 1 ” 選中>系上公告  
               <輸入 類型= “收音機” 名稱= “類型” 值= “ 2 ” >招生消息
