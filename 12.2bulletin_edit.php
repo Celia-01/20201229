@@ -14,7 +14,7 @@ if（！isset（$ _SESSION [ 'id' ]））{
     }
     其他  
        迴聲 “修改成功”；   
-    mysqli_close（$ conn）;
-    echo  “ <元http-equiv ='refresh'content ='3; url = bulletin.php''>” ;
+    mysqli_close（$ conn）;//關閉數據庫連接
+    echo  “ <元http-equiv ='refresh'content ='3; url = bulletin.php''>” ;//上面例子會讓網頁在載入 3秒後，自動跳轉到bulletin.php 
 }
 ？>
