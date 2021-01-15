@@ -15,6 +15,7 @@ if（！isset（$ _SESSION [ 'id' ]））{
     其他  
        迴聲 “添加佈告成功”；   
     mysqli_close（$ conn）;
-    echo  “ <元http-equiv ='refresh'content ='3; url = bulletin.php''>” ;
+    echo  “ <元http-equiv ='refresh'content ='3; url = bulletin.php''>” ;//上面例子會讓網頁在載入 0秒後，自動跳轉到bulletin.php
+}
 }
 ？>
