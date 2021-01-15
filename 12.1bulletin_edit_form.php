@@ -1,7 +1,7 @@
 <？php 
     error_reporting（0）;
     $ conn = mysqli_connect（ “ localhost”， “ root”， “”， “ mydb”）;
-    如果（mysqli_connect_error（$ conn））
+    如果（mysqli_connect_error（$ conn））//如果連接失敗，顯示錯誤
       die（“無法連線資料庫”）;
     $ sql = “從公告中選擇*，其中bid = {$ _GET ['bid']}”” ;
     // echo $ sql;
@@ -11,9 +11,9 @@
 迴聲 “
 <html>
 <head> <title>修改佈告</ title> </ head>
-<身體>
+<身體><!--用來呈現網頁的主要內容-->
   <h2>修改佈告</ h2>
-  <form action ='bulletin_edit.php'method ='post'>
+  <form action ='bulletin_edit.php'method ='post'><!--當按下送出表單之後，會將資料傳送到 bulletin_edit.php 這程式。-->
     <輸入類型=隱藏名稱=出價值= $行[出價]>
     佈告標題：<input type ='text'name ='title'size = 200 value ='$ row [title]'> <p>      
     佈告內容：<p>
@@ -30,7 +30,7 @@
     if（$ row [ 'type' ] == 3）回顯 “ checked” ;
     echo  “ type ='radio'>企業徵才<p>      
     發佈時間：<輸入類型=日期名稱='時間'值= $行[時間]> <p>      
-    <輸入類型=提交>
+    <輸入類型=提交><!--這是最常見的提交方式-->
   </ form>
 </ body>
 </ html>
